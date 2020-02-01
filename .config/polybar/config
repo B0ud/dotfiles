@@ -19,7 +19,8 @@ height = 32
 offset-y = 0
 top = true
 fixed-center = true 
-background = ${colors.background}
+#background = ${colors.background}
+background = #90000000
 foreground = ${colors.foreground}
 
 line-size = 3
@@ -35,7 +36,7 @@ font-2 = MaterialIcons:size=11;4
 
 modules-left = i3
 modules-center = xwindow
-modules-right = cpu memory date wired battery powermenu
+modules-right = cpu memory date wired battery powermenu volume
 
 tray-position = right
 tray-detached = false 

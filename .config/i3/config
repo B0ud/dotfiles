@@ -34,6 +34,8 @@ client.background       $background
 #exec_always --no-startup-id ~/.config/i3/bing-wallpaper.sh &> ~/bing.log
 # exec_always --no-startup-id ~/.config/i3/unsplash-wallpaper.sh
 
+exec_always --no-startup-id feh --bg-scale ~/Images/wallpaper.png
+
 ###############################
 #         KEYBINDING          #
 ###############################
