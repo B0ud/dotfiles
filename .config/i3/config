@@ -34,7 +34,7 @@ client.background       $background
 #exec_always --no-startup-id ~/.config/i3/bing-wallpaper.sh &> ~/bing.log
 # exec_always --no-startup-id ~/.config/i3/unsplash-wallpaper.sh
 
-exec_always --no-startup-id feh --bg-scale ~/Images/wallpaper.png
+exec_always --no-startup-id feh --bg-scale ~/Images/int.jpg
 
 ###############################
 #         KEYBINDING          #
@@ -106,7 +106,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 #bindsym $mod+e exec pcmanfm "`xcwd`"
 
 #Lock 
-bindsym $mod+l exec "/home/boud/.config/i3/lock.sh"
+#bindsym $mod+l exec "/home/boud/.config/i3/lock.sh"
+bindsym $mod+l exec i3lock-fancy -t " "
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
