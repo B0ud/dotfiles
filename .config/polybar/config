@@ -14,7 +14,7 @@ spotify = ${xrdb:color10}
 power= ${colors.urgent}
 
 [bar/default]
-monitor = eDP-1
+monitor = ${env:MONITOR:}
 height = 32
 offset-y = 0
 top = true
@@ -44,7 +44,7 @@ tray-padding = 0
 
 [bar/center]
 inherit = bar/default
-monitor = eDP-1
+monitor = ${env:MONITOR:}
 modules-right = powermenu
 tray-position = right
 tray-detached = false 
@@ -52,13 +52,13 @@ tray-padding = 0
 
 [bar/left]
 inherit = bar/default
-monitor = eDP-1
+monitor = ${env:MONITOR:}
 modules-left = 
 modules-right = cpu memory i3
 
 [bar/right]
 inherit = bar/default
-monitor = eDP-1
+monitor = ${env:MONITOR:}
 modules-left = i3 music
 modules-center = date
 modules-right = volume

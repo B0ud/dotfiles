@@ -15,24 +15,24 @@ focus_follows_mouse yes
 # Police à utiliser
 font pango: SFNS Display 10
 
-# Couleurs
-set_from_resource       $active       active
-set_from_resource       $inactive     secondary
-set_from_resource       $background   background
-set_from_resource       $foreground   foreground
-
-# class			border	    backgr.   	text	       indicat   child_border
-client.focused          $background #222D32     $foreground    #FFCC66   $active
-client.focused_inactive $background #222D32 	$foreground    #484e50   $inactive
-client.unfocused        $background #182125     $inactive      #292d2e   $inactive
-client.urgent           $active     $active    	$background    #900000   $active
-client.placeholder      $background $background $foreground    #000000   $inactive
-client.background       $background
-
-# Fond d'écran
-# exec_always --no-startup-id feh --bg-scale ~/Images/wallpaper.png
-#exec_always --no-startup-id ~/.config/i3/bing-wallpaper.sh &> ~/bing.log
-# exec_always --no-startup-id ~/.config/i3/unsplash-wallpaper.sh
+## Couleurs
+#set_from_resource       $active       active
+#set_from_resource       $inactive     secondary
+#set_from_resource       $background   background
+#set_from_resource       $foreground   foreground
+#
+## class			border	    backgr.   	text	       indicat   child_border
+#client.focused          $background #222D32     $foreground    #FFCC66   $active
+#client.focused_inactive $background #222D32 	$foreground    #484e50   $inactive
+#client.unfocused        $background #182125     $inactive      #292d2e   $inactive
+##client.urgent           $active     $active    	$background    #900000   $active
+#client.placeholder      $background $background $foreground    #000000   $inactive
+#client.background       $background
+#
+## Fond d'écran
+## exec_always --no-startup-id feh --bg-scale ~/Images/wallpaper.png
+##exec_always --no-startup-id ~/.config/i3/bing-wallpaper.sh &> ~/bing.log
+## exec_always --no-startup-id ~/.config/i3/unsplash-wallpaper.sh
 
 exec_always --no-startup-id feh --bg-scale ~/Images/int.jpg
 
@@ -45,6 +45,8 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+#Move Workspaces between screen
+bindsym $mod+p move workspace to output left
 # kill focused window
 bindsym $mod+Shift+A kill
 bindsym $alt+F4 kill
@@ -265,4 +267,5 @@ smart_borders on
 smart_gaps on
 
 # Redémarre polybar quand on redémarre i3
-exec_always --no-startup-id "killall polybar;polybar -r default"
+#exec_always --no-startup-id "killall polybar;polybar -r default"
+exec_always --no-startup-id ~/.config/polybar/launch.sh

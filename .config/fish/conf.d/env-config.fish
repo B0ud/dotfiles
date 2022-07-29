@@ -16,3 +16,4 @@ set -x LC_CTYPE fr_FR.utf8
 #set -x TERM xterm-256color 
 alias ssh "env TERM=xterm-256color ssh"
 alias vssh "env TERM=xterm-256color vagrant ssh"
+
